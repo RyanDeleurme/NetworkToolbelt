@@ -14,7 +14,7 @@ def backup_config(json: list):
             month = datetime.date.today()
             find_hostname = con.find_prompt()  # this will print >device_host_name
             parse_hostname = find_hostname.replace(">", "")  # remove the greater than and we can get the hostname
-            s = f'//nwfree/it/ryan/Route_switch_backups/{month}-BACKUP-{parse_hostname}.txt'  # creates filename of backup
+            s = f'//root/it/folder/Route_switch_backups/{month}-BACKUP-{parse_hostname}.txt'  # creates filename of backup
 
             # "open" the file we are about to create above
             with open(s, 'w') as f:
